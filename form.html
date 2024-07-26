@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>form</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        background: url("backroundimage.jpg") no-repeat center;
+        background-size: cover;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Registration Form</h2>
+      <form action="#" autocomplete="off">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" required /><br />
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" required /><br />
+        <label for="email">Email Id</label>
+        <input type="email" id="email" name="email" required /><br />
+        Password:<input type="password" required /><br /><br />
+        Address:<textarea cols="15" rows="5" required></textarea><br /><br />
+        Gender:<input type="radio" name="Gender" required />Female<input
+          type="radio"
+          name="Gender"
+        />Male <br /><br />
+        Hobbies:<input type="checkbox" name="Hobies" />drawing<input
+          type="checkbox"
+          name="Hobies"
+        />singing<br /><br />
+        Submit:<input type="button" value="submit" />
+        <input type="reset" value="reset" /><br /><br />
+      </form>
+    </div>
+  </body>
+</html>
